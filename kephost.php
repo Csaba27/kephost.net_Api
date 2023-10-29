@@ -48,7 +48,7 @@ class Kephost
 		}
 
 		$setopt_array[CURLOPT_URL] = $url;
-		$setopt_array[CURLOPT_RETURNTRANSFER] = false;
+		$setopt_array[CURLOPT_RETURNTRANSFER] = true;
 		$setopt_array[CURLOPT_TIMEOUT] = 15;
 		$setopt_array[CURLOPT_MAXREDIRS] = 5;
 		$setopt_array[CURLOPT_REFERER] = 'http://' . $this->host . '/index.php';
